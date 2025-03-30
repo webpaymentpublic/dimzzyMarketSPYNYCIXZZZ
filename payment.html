@@ -1,0 +1,96 @@
+<!DOCTYPE html><html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilih Metode Pembayaran</title>
+    <link rel="stylesheet" href="style.css"> <!-- Pastikan file CSS yang sama dengan index.html digunakan -->
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+            background: url('background.png') no-repeat center center;
+            background-size: cover;
+        }
+        .container {
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            width: 90%;
+            max-width: 400px;
+        }
+        .qris-img {
+            width: 100%;
+            max-width: 250px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+        }
+        h2 {
+            margin-bottom: 15px;
+            color: black;
+        }
+        .payment-option {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: white;
+            border: 2px solid black;
+            padding: 10px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        .payment-option img {
+            width: 40px;
+            height: 40px;
+        }
+        .copy-btn {
+            background: dodgerblue;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+        }
+        .copy-btn:hover {
+            background: deepskyblue;
+        }
+    </style>
+    <script>
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(() => {
+                alert("Nomor Berhasil Disalin Bang: " + text);
+            }).catch(err => {
+                alert("Gagal Menyalin Teks Bang");
+                console.error(err);
+            });
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <img src="https://files.catbox.moe/suhf3w.jpg" alt="QRIS" class="qris-img">
+        <h2>Pilih Metode Pembayaran</h2><div class="payment-option">
+        <img src="dana.png" alt="DANA"> 
+        <span>DANA - 082130337839</span>
+        <button class="copy-btn" onclick="copyToClipboard('082130337839')">Salin</button>
+    </div>
+
+    <div class="payment-option">
+        <img src="ovo.png" alt="OVO"> 
+        <span>OVO - 083157185069</span>
+        <button class="copy-btn" onclick="copyToClipboard('083157185069')">Salin</button>
+    </div>
+
+    <div class="payment-option">
+        <img src="gopay.png" alt="GOPAY"> 
+        <span>GOPAY - 082130337839</span>
+        <button class="copy-btn" onclick="copyToClipboard('082130337839')">Salin</button>
+    </div>
+</div>
+
+</body>
+</html>

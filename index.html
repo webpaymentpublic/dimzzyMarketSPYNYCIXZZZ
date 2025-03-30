@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dimzzy market</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('background.png'); /* Ganti dengan link gambar */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+        .container {
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            width: 90%;
+            max-width: 400px;
+        }
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid white;
+        }
+        h1 {
+            margin: 10px 0;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        .buttons a {
+            display: inline-block;
+            background: dodgerblue;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin: 5px;
+        }
+        .buttons a:hover {
+            background: deepskyblue;
+        }
+        .shop-btn {
+            display: block;
+            margin: 10px auto;
+            padding: 8px 20px;
+            background: white;
+            color: black;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .audio-player {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="logo.png" alt="Profile" class="profile-img"> 
+        <h1>Hello, I'm Dimzzy Market</h1>
+        <h3>ABOUT ME</h3>
+        <p>Hai Saya Adalah Dimzzy Yang Akan Membantu Anda Dalam Hal Payment</p>
+        
+        <div class="buttons">
+            <a href="https://whatsapp.com/channel/0029VbAV8duH5JLzy7NMEa0G">Saluran</a>
+            <a href="https://wa.me/6283157185069">Owner</a>
+            <a href="payment.html">Payment QRIS</a>
+        </div>
+
+        <button class="shop-btn">Shop</button>
+
+        <div class="audio-player">
+            <audio controls>
+                <source src="https://files.catbox.moe/4ce5im.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </div>
+
+</body>
+</html>
